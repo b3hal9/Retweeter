@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>TwitterBot</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        style="
+          width: 20rem;
+          margin: auto;
+          margin-top: 10%;
+          border: 2px solid blueviolet;
+          padding: 50px;
+        "
+        action="/submit"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" name="username" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" name="password" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Keyword</label>
+          <input
+            type="text"
+            class="form-control"
+            name="keyword"
+            placeholder="Enter keyword to Search"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary" style="float: right;">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
